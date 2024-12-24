@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtHosgeldiniz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_blue" />
+
+    <TextView
+        android:id="@+id/txtHosgeldiniz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:fontFamily="@font/lexend_bold"
+        android:textStyle="bold"
+        android:text="Hoşgeldiniz"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/txtAciklama"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lexend_light"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtHosgeldiniz"
+        android:text="Hisse senetlerini satın almadan önce alacağınız hisse senetlerinin haberlerine göz atabilirsiniz." />
+
+    <Button
+        android:id="@+id/bttnGirisYap"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/blue_700"
+        android:fontFamily="@font/lexend"
+        android:gravity="center"
+        android:text="Giriş yap"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtAciklama"
+        app:layout_constraintStart_toStartOf="@+id/txtAciklama"
+        app:layout_constraintTop_toBottomOf="@id/txtAciklama" />
+
+    <Button
+        android:id="@+id/bttnKayitOl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/blue_700"
+        android:fontFamily="@font/lexend"
+        android:gravity="center"
+        android:text="Kayıt ol"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/bttnGirisYap"
+        app:layout_constraintStart_toStartOf="@+id/bttnGirisYap"
+        app:layout_constraintTop_toBottomOf="@id/bttnGirisYap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/txtKayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/lexend_bold"
+        android:text="Kayıt Ol"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editLayAd"
+        android:layout_width="343dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtKayitOl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editAd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Ad"
+            android:fontFamily="@font/lexend"
+            android:textSize="18sp"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editLaySoyad"
+        android:layout_width="343dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLayAd">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Soyad"
+            android:fontFamily="@font/lexend"
+            android:textSize="18sp"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editLayEposta"
+        android:layout_width="343dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLaySoyad">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEposta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="E-posta"
+            android:fontFamily="@font/lexend"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editLaySifre"
+        android:layout_width="343dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLayEposta">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSifre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Şifre"
+            android:fontFamily="@font/lexend"
+            android:textSize="18sp"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bttnKayitOl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/blue_700"
+        android:fontFamily="@font/lexend"
+        android:gravity="center"
+        android:text="Kayıt Ol"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editLaySifre"
+        app:layout_constraintStart_toStartOf="@+id/editLaySifre"
+        app:layout_constraintTop_toBottomOf="@id/editLaySifre" />
+
+    <TextView
+        android:id="@+id/txtZatenUyeMisiniz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/lexend"
+        android:text="Zaten üye misiniz?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttnKayitOl" />
+
+    <TextView
+        android:id="@+id/txtGirisYap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="Giriş Yap"
+        android:textColor="@color/blue_700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtZatenUyeMisiniz" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
